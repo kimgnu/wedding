@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  min-width: 200px;
+  width: auto !important;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.fullscreen-on-load {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.center-horizontal {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-vertical-container-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.center-vertical-container-wrapper .center-vertical-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title {
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 16px;
+}
+
+.message-container {
+  padding: 30px;
+  background-color: #eae8e8;
+}
+
+.footprints-container-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.center-vertical-line-container {
+  position: relative;
+}
+
+.center-vertical-line {
+  position: absolute;
+  width: 3px;
+  top: 10px;
+  bottom: 10px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  background-color: black;
+}
+
+.footprints-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footprint-space {
+  height: 30px;
+}
+
+.footprint-left-wrapper {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.year-mark-container-right {
+  width: 50%;
+  transform: translateX(100%);
+  margin-left: -10px;
+}
+
+.year-mark-container-left {
+  display: flex;
+}
+
+.year-mark {
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  display: inline-block;
+  margin: auto 0;
+}
+
+.year-title-right {
+  display: inline-block;
+}
+
+.year-title-left {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.year-content-container-right,
+.year-content-container-center,
+.year-content-container-left {
+  display: flex;
+}
+
+.year-description-right,
+.year-description-left,
+.year-description-center {
+  padding: 4px;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: #f4b3b3;
+}
+
+.year-description-right {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.year-description-left {
+  margin-right: 20px;
+}
+
+.year-description-center {
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.year-content-padding-right {
+  margin-right: auto;
+}
+
+.year-content-padding-left {
+  margin-left: auto;
+}
+
+.year-photo-container-right,
+.year-photo-container-left,
+.year-photo-container-center {
+  width: 120px;
+  height: 90px;
+  padding: 4px;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: #26a290;
+}
+
+.year-photo-container-right {
+  margin-left: 20px;
+}
+
+.year-photo-container-left {
+  margin-right: 20px;
+}
+
+.year-photo-container-center {
+  z-index: 1;
+  margin: 0 auto;
+}
+
+#text {
+  margin: 0;
+}
