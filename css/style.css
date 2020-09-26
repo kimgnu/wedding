@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   min-width: 200px;
@@ -12,6 +17,7 @@ p {
 
 .fullscreen-on-load {
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -19,7 +25,8 @@ p {
   width: 100%;
 }
 
-.center-horizontal {
+.center-horizontal,
+.family-info-container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -37,12 +44,29 @@ p {
   transform: translateY(-50%);
 }
 
+.main-text {
+  color: aquamarine;
+}
+
 .title {
   font-size: 24px;
 }
 
 .subtitle {
   font-size: 16px;
+}
+
+.family-info-container {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: row;
+}
+
+.family-info {
+  flex: 1;
+  padding: 30px;
+  background-color: #26a290;
 }
 
 .message-container {
@@ -151,12 +175,18 @@ p {
 .year-photo-container-right,
 .year-photo-container-left,
 .year-photo-container-center {
-  width: 120px;
-  height: 90px;
-  padding: 4px;
-  border-color: transparent;
-  border-radius: 10px;
-  background-color: #26a290;
+  width: 90%;
+  max-width: 400px;
+}
+
+.year-photo-small {
+  width: 60%;
+  max-width: 350px;
+}
+
+.year-photo-tiny {
+  width: 30%;
+  max-width: 200px;
 }
 
 .year-photo-container-right {
@@ -170,6 +200,50 @@ p {
 .year-photo-container-center {
   z-index: 1;
   margin: 0 auto;
+}
+
+.center-photo-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.year-photo-container-right > img,
+.year-photo-container-left > img,
+.year-photo-container-center > img,
+.center-photo-container > img {
+  width: 100%;
+  height: auto;
+  border-color: transparent;
+  border-radius: 10px;
+  display: block;
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.floating-button-container {
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  right: 20px;
+}
+
+.scroll-button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.scroll-icon,
+.scroll-icon-flip {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-icon-flip {
+  transform: rotate(180deg);
 }
 
 #text {
